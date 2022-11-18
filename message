@@ -46,3 +46,7 @@ Exception in thread "main" java.util.NoSuchElementException
 	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
 	at Premium.calcBill(Main.java:15)
 	at Main.main(Main.java:53)
+
+
+
+QUESTION 2 PASSED???
