@@ -1,1 +1,52 @@
+import java.util.*;
 
+class BankAccount{
+    int pin ;
+    int balance;
+
+    Scanner input = new Scanner(System.in);
+
+    BankAccount(){
+        this.pin = 2022 ;
+        this.balance = 10000 ;
+    }
+    void deposit(){
+        int hundred = input.nextInt() ;
+        int fivehundred = input.nextInt() ;
+        int twothousand = input.nextInt() ;
+        this.balance += (hundred*100)+(fivehundred*500)+(twothousand*2000) ;
+        System.out.println(this.balance);
+    }
+    void withdraw(int amt){
+        if (amt>this.balance){
+            System.out.println("Insufficient balance");
+        }
+        else{
+            this.balance -= amt ;
+            System.out.print(this.balance);
+        }
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        BankAccount ac1 = new BankAccount() ;
+        int pn = input.nextInt() ;
+        if (pn == ac1.pin){
+            int ch = input.nextInt() ;
+            if (ch==1) {
+                ac1.deposit();
+            }
+            else if(ch==2){
+                int amt = input.nextInt() ;
+                ac1.withdraw(amt);
+            }
+            else{
+                System.out.println("Invalid choice");
+            }
+        }
+        else{
+            System.out.println("Invalid Pin Number");
+        }
+    }
+}
