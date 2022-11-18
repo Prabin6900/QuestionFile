@@ -33,6 +33,16 @@ Balance Rs.5000
 Your Program Output
 5000
 done with 2nd one can u do 1st error solving
-UPDATED THE QUES2 SOLUTION ..CHECK IT
-I AM TRYING THE ERROR SOLVING...BUT I GUESS IT WONT SOLVE
-ITS VPROPEL ERROR..HAPPENS
+Input
+1 3 1 1 2
+Expected output
+Bill Amount: Rs.9600
+Your Program Output
+THIS IS THE OUTPUT WHAT IS COMING WITH SOME ERROR
+Exception in thread "main" java.util.NoSuchElementException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:937)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Premium.calcBill(Main.java:15)
+	at Main.main(Main.java:53)
