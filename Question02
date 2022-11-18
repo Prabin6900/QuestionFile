@@ -1,1 +1,17 @@
+ATM allows the customers to deposit amount into machine and withdraw amount from the machine. Initially, the customer has to enter pin number in the machine. If the Pin number is found to be correct then machine allows the customer to access his or her account. Otherwise, throw the user defined exception to alert the customer as “Invalid Pin Number”. Once, the customer is authenticated with correct Pin then the customer has to enter deposit or withdraw. If the choice is 1 (1 denotes deposit) then the customer has to enter the details such as number of Rs.100, Rs.500 and Rs.2000. Afterwards, the machine will produce a receipt that consist of total amount available in balance. If the choice is 2 (2 denotes withdraw) then customer enters the amount to be withdrawn. The machine will count and provide the mentioned amount if and only if the customer has sufficient balance and also machine will display the balance amount. Otherwise, throw an exception to display the user defined message “Insufficient balance”. Finally, if the choice is other than deposit then throw an exception to display “Invalid choice”. Note: Consider the correct Pin number is 2022 for authentication. Initialize balance as Rs.10000. Write a java program for the given scenario.
 
+Sample Input:
+
+2022
+
+1
+
+5              // represents 5 no. of Rs100
+
+10           // represents 10 no. of Rs500
+
+2            // represents 2 no. of Rs2000
+
+Sample Output:
+
+Balance Rs.19500
