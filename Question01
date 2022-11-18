@@ -1,3 +1,39 @@
-ihgiohsi
-dsbsd
-zsjfujrjfjdkufjkgudl
+Design an Air-ticket Management System using Java. Airways offer two types of tickets – premium and economic. People with premium tickets can either choose delicious food or one hour with body massage chair. Economic tickets have entry only have beverages(coffee/tea/milk) or fresh juice.  The basic price of ticket is Rs.2500/- and Rs.1500/- for premium and economic class respectively. The cost of delicious food Rs.800/-  beverage cost - Rs.100/- Fresh Juice - Rs.200/- The cost for body massage chair per premium ticket is Rs.500/-
+
+Create a super class to store the basic details of a air ticket - quantity and basicprice.  Define calcBill() method to read quantity and display the bill amount. Derive two sub classes to represent the specific type of tickets such as 1) Premium 2) Economic. Override the calcBill() method to read quantity, preferences for each ticket, calculate and display the bill amount.
+
+Read the choice of the user for the type of ticket, create the respective object and call the method to print the bill amount. Use Dynamic Polymorphism to implement the solution.
+
+Premium/Economic (1/2)
+
+Delicious Food/Body Massage(1/2)
+
+Beverages/Fresh Juice(1/2)
+
+Input Format
+
+Type of the ticket - int
+
+Number of tickets - int
+
+Preferences choice for each ticket -int
+
+Output Format
+
+Bill Amount: int
+
+Sample Input:
+
+1 3 1 1 2 
+
+Three premium tickets with two delicious food and one body massage
+
+Sample Output:
+
+Bill Amount: Rs.9600
+
+(Ticket Price - 2500*3 =7500
+
+preferences - 800+800+500 =2100
+
+total=7500+2100=9600)
