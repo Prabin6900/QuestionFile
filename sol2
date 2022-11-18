@@ -15,7 +15,7 @@ class BankAccount{
         int fivehundred = input.nextInt() ;
         int twothousand = input.nextInt() ;
         this.balance += (hundred*100)+(fivehundred*500)+(twothousand*2000) ;
-        System.out.println(this.balance);
+        System.out.println("Balance Rs."+this.balance);
     }
     void withdraw(int amt){
         if (amt>this.balance){
@@ -23,7 +23,7 @@ class BankAccount{
         }
         else{
             this.balance -= amt ;
-            System.out.print(this.balance);
+            System.out.print("Balance Rs."+this.balance);
         }
     }
 }
