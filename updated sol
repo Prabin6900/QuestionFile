@@ -1,0 +1,44 @@
+import java.util.*;
+
+class PoliceCharacter{
+    double height ;
+    int age ;
+    double chest ;
+    Scanner input = new Scanner(System.in);
+    PoliceCharacter(){
+        setHeight();
+        setAge();
+        setChest();
+    }
+    public void setHeight(){
+        this.height = input.nextDouble();
+    }
+    public void setAge(){
+        int ag = input.nextInt();
+        if(ag<0){
+            System.out.println("Negative age");
+            System.exit(1);
+        }
+        else{
+            this.age = ag ;
+        }
+    }
+    public void setChest(){
+        this.chest = input.nextDouble();
+    }
+    public void selected(){
+        if((this.height>5.2 && this.height<5.6) && (this.age>18 && this.age<50) && (this.chest>45)){
+            System.out.println("Selected");
+        }
+        else{
+            System.out.println("Not Selected");
+        }
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+        PoliceCharacter pol1 = new PoliceCharacter() ;
+        pol1.selected();
+    }
+}
